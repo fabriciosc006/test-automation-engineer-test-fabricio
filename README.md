@@ -1,3 +1,8 @@
+#Test Automation Fabricio
+ - Used Playwright With JavaScript
+ - Used POM desgin Pattern
+ - The File Of the Test Case is inside Folder tests "MarketPlaceTest.spc.js"
+
 # Test automation engineer test
 
 We'll be using this test to assess your skill level as a test automation engineer. This test is designed to test your skills which are needed in the day-to-day job of a test automation engineer at [Beequip](https://beequip.com). 
