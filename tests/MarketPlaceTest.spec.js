@@ -6,7 +6,7 @@ import { CartPage } from '../pages/CartPage';
 import { LeasePage } from '../pages/LeasePage';
 
   //run: npx playwright test MarketPlaceTest.spec.js --project chromium --headed
-  //npx playwright test --u
+  //npx playwright test --ui
   //npx playwright show-report
 
 test('I Can Request an Equipment on the MarketPlace', async ({ page }) => {
