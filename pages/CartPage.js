@@ -59,5 +59,6 @@ class CartPage {
         await this.page.locator(this.EquipmentChosen).click();
     }
 
+    
 
 }

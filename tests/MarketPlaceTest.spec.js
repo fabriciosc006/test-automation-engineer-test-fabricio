@@ -10,7 +10,8 @@ import { LeasePage } from '../pages/LeasePage';
   //npx playwright show-report
 
 test('I Can Request an Equipment on the MarketPlace', async ({ page }) => {
-   test.setTimeout(60_000); 
+  
+    test.setTimeout(60_000); 
   // HomePage
   const home=new HomePage(page);
   const market=new MarketPage(page);
@@ -57,7 +58,6 @@ test('I Can Request an Equipment on the MarketPlace', async ({ page }) => {
   await cartpage.clickEquipment();
   await page.waitForTimeout(3000);  
   //calculate Lease
-  await leasepage.clickLease();
-
+  await leasepage.clickLease();  
 
 });
