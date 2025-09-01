@@ -1,6 +1,8 @@
 exports.CartPage = 
 class CartPage {
     
+    //Description: The page that user can filter the equipment characteristics
+
     //#elements of CartPage
     constructor(page){
         this.page = page;
@@ -16,7 +18,8 @@ class CartPage {
         this.cilinderCheckBox = '//div[@class="sc-f4a6a8b2-1 WsHhY"]/div[1]/div[2]/div[3]/div[5]/fieldset/div/div/div/input';
         this.buttonKmOK = '//div[@class="sc-f4a6a8b2-1 WsHhY"]/div[1]/div[2]/div[1]/div[8]/form/fieldset/div/div/button';
         this.EquipmentChosen = '//div[@class="sc-11fe422-0 jxajvU"]/article/div/h3/a[contains(@href, "actros")]';
-
+        this.activeFilters = '//div[contains(@class, "deVAYh")]/div[@Class="sc-dntaoT lmLTxI"]/h2';
+        this.filterCilinder = '//div[contains(@class,"deVAYh")]/div[@class="sc-dntaoT lmLTxI"]/button[contains(@class, "sc-9c8ea5b-1")][4]';
     }
 
     //#actions of CartPage
@@ -57,8 +60,6 @@ class CartPage {
 
     async clickEquipment(){
         await this.page.locator(this.EquipmentChosen).click();
-    }
-
-    
+    }     
 
 }

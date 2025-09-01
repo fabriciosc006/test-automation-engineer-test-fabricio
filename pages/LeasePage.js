@@ -5,7 +5,7 @@ class LeasePage {
     constructor(page){
         this.page = page;
         this.buttonLease = '//div[@class="sc-dff53fc1-2 bRSncR"]/div/a';   
-        
+        this.leaseText = '//div[@class="sc-dff53fc1-2 bRSncR"]/h4'
     }
 
     //#actions of LeasePage
@@ -18,6 +18,7 @@ class LeasePage {
         await this.page.locator(this.buttonLease).click({ force: true });
         
     }
+       
 
 
 }

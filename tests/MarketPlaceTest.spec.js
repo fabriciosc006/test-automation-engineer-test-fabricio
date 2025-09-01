@@ -52,12 +52,18 @@ test('I Can Request an Equipment on the MarketPlace', async ({ page }) => {
   //filter cilinders
   await page.waitForTimeout(3000);
   await cartpage.enterCilinders();
+  const bannerCart = page.locator(cartpage.activeFilters);
+  await expect(bannerCart).toContainText("Actieve filters");
   await page.waitForTimeout(2000);
+  const filtercilinder = page.locator(cartpage.filterCilinder);
+  await expect(filtercilinder).toContainText("6");
 
   //chose the Truck
   await cartpage.clickEquipment();
-  await page.waitForTimeout(3000);  
+  await page.waitForTimeout(3000);    
   //calculate Lease
-  await leasepage.clickLease();  
+  const leaseTextCart = page.locator(leasepage.leaseText);
+  await expect(leaseTextCart).toContainText("Lease vanaf");  
+  await leasepage.clickLease();    
 
 });

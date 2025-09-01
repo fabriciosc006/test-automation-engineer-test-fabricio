@@ -1,6 +1,8 @@
 exports.MarketPage = 
 class MarketPage {
     
+    //Description: The Page that contains the Equipment to Select
+    
     //#elements of MarketPage
     constructor(page){
         this.page = page;
